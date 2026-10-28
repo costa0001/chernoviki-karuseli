@@ -87,6 +87,19 @@
 По смыслу: «время» g38, g51, g62-g64 (цветочные часы); «проблема/боль» g59; «размышление» g49, g50, g53, g58; «успех/победа» g67; «работа с телефоном/ИИ» g65, g66; горизонтальные кадры g62-g64.
 g65: видна вывеска Montblanc, без нужды не использовать.
 
+Добавлены 28.10 (четвёртая партия):
+- g68_ulica-Dior_telefon_ulybka_vidna-vyveska-Dior.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g68_ulica-Dior_telefon_ulybka_vidna-vyveska-Dior.jpg
+- g69_ulica-Dior_telefon_smeh_zhest_vidna-vyveska-Dior.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g69_ulica-Dior_telefon_smeh_zhest_vidna-vyveska-Dior.jpg
+- g70_ulica-Dior_telefon_kulak-pobeda_vidna-vyveska-Dior.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g70_ulica-Dior_telefon_kulak-pobeda_vidna-vyveska-Dior.jpg
+- g71_sad-dom_ruka-u-podborodka_dumaet.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g71_sad-dom_ruka-u-podborodka_dumaet.jpg
+- g72_sad-dom_ruki-skreshcheny_shirokaya-ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g72_sad-dom_ruki-skreshcheny_shirokaya-ulybka.jpg
+- g73_sad-dom_ruki-skreshcheny_legkaya-ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g73_sad-dom_ruki-skreshcheny_legkaya-ulybka.jpg
+- g74_sad-bashnya_zastegivaet-pidzhak_uverennyy.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g74_sad-bashnya_zastegivaet-pidzhak_uverennyy.jpg
+- g75_sad-bashnya_popravlyaet-ochki_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g75_sad-bashnya_popravlyaet-ochki_vzglyad-vverh.jpg
+- g76_sad-bashnya_ruki-skreshcheny_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g76_sad-bashnya_ruki-skreshcheny_ulybka.jpg
+
+g68-g70: крупно видна вывеска Dior, без нужды не использовать.
+
 g41: на фоне видна вывеска Rolex, для рекламы бренда не использовать без нужды.
 
 Уже использованы на обложках 28.10: g05 (карусель «5 раз я менял направление бизнеса»), g03 (карусель «5 бесплатных ИИ-помощников»).
