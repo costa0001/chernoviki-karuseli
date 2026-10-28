@@ -40,5 +40,29 @@
 - x01_most-flag_BEZ-OCHKOV_ruki-szhaty.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/x01_most-flag_BEZ-OCHKOV_ruki-szhaty.jpg
 - x02_most-flag_BEZ-OCHKOV_variant.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/x02_most-flag_BEZ-OCHKOV_variant.jpg
 
+Добавлены 28.10 (вторая партия):
+- g28_ozero-most-razmyt_ruki-skreshcheny_seryoznyy_krupno.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g28_ozero-most-razmyt_ruki-skreshcheny_seryoznyy_krupno.jpg
+- g29_naberezhnaya-zdaniya_ruki-skreshcheny_shirokaya-ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g29_naberezhnaya-zdaniya_ruki-skreshcheny_shirokaya-ulybka.jpg
+- g30_naberezhnaya-zdaniya_ruki-skreshcheny_legkaya-ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g30_naberezhnaya-zdaniya_ruki-skreshcheny_legkaya-ulybka.jpg
+- g31_most-flag_ruki-skreshcheny_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g31_most-flag_ruki-skreshcheny_ulybka.jpg
+- g32_most-flag_ruki-skreshcheny_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g32_most-flag_ruki-skreshcheny_vzglyad-vverh.jpg
+- g33_fontan_ruka-na-perilah_polnyy-rost.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g33_fontan_ruka-na-perilah_polnyy-rost.jpg
+- g34_fontan_portret_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g34_fontan_portret_ulybka.jpg
+- g35_fontan_portret_shirokaya-ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g35_fontan_portret_shirokaya-ulybka.jpg
+- g36_fontan_protyanutaya-ruka_krupno.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g36_fontan_protyanutaya-ruka_krupno.jpg
+- g37_fontan_ladoni-vmeste_krupno.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g37_fontan_ladoni-vmeste_krupno.jpg
+- g38_fontan_smotrit-na-chasy.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g38_fontan_smotrit-na-chasy.jpg
+- g39_fontan_ruki-skreshcheny_ulybka_krupno.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g39_fontan_ruki-skreshcheny_ulybka_krupno.jpg
+- g40_fontan_ruki-skreshcheny_shire.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g40_fontan_ruki-skreshcheny_shire.jpg
+- g41_ploshchad-pamyatnik_ruki-v-karmanah_vidna-vyveska-Rolex.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g41_ploshchad-pamyatnik_ruki-v-karmanah_vidna-vyveska-Rolex.jpg
+- g42_fontan_popravlyaet-ochki_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g42_fontan_popravlyaet-ochki_ulybka.jpg
+- g43_fontan_portret_spokoynyy.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g43_fontan_portret_spokoynyy.jpg
+- g44_fontan_portret_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g44_fontan_portret_ulybka.jpg
+- g45_terrasa-fontan_ruki-skreshcheny_uverennyy.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g45_terrasa-fontan_ruki-skreshcheny_uverennyy.jpg
+- g46_terrasa-fontan_ruki-skreshcheny_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g46_terrasa-fontan_ruki-skreshcheny_vzglyad-vverh.jpg
+- g47_naberezhnaya-krany_ruka-na-perilah_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g47_naberezhnaya-krany_ruka-na-perilah_ulybka.jpg
+
+g41: на фоне видна вывеска Rolex, для рекламы бренда не использовать без нужды.
+
 Уже использованы на обложках 28.10: g05 (карусель «5 раз я менял направление бизнеса»), g03 (карусель «5 бесплатных ИИ-помощников»).
-Лучшие для будущих обложек: g27 (крупно, флаг, руки скрещены), g08, g13, g20, g01.
+Лучшие для будущих обложек: g27, g39, g42 (поправляет очки), g46 (взгляд вверх, про цели), g38 (смотрит на часы, про время), (крупно, флаг, руки скрещены), g08, g13, g20, g01.
