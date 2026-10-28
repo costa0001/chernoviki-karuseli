@@ -62,6 +62,31 @@
 - g46_terrasa-fontan_ruki-skreshcheny_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g46_terrasa-fontan_ruki-skreshcheny_vzglyad-vverh.jpg
 - g47_naberezhnaya-krany_ruka-na-perilah_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g47_naberezhnaya-krany_ruka-na-perilah_ulybka.jpg
 
+Добавлены 28.10 (третья партия):
+- g48_ozero-perila_popravlyaet-ochki_vzglyad-vdal.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g48_ozero-perila_popravlyaet-ochki_vzglyad-vdal.jpg
+- g49_ozero_ruka-u-podborodka_razmyshlyaet.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g49_ozero_ruka-u-podborodka_razmyshlyaet.jpg
+- g50_ozero_palec-u-shcheki_razmyshlyaet.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g50_ozero_palec-u-shcheki_razmyshlyaet.jpg
+- g51_ozero_udivlenie_pokazyvaet-na-chasy_EMOCIYA-VREMYA.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g51_ozero_udivlenie_pokazyvaet-na-chasy_EMOCIYA-VREMYA.jpg
+- g52_park-pavilon_ruki-skreshcheny_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g52_park-pavilon_ruki-skreshcheny_ulybka.jpg
+- g53_park_ruka-u-podborodka_vzglyad-v-storonu.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g53_park_ruka-u-podborodka_vzglyad-v-storonu.jpg
+- g54_park_ruki-skreshcheny_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g54_park_ruki-skreshcheny_vzglyad-vverh.jpg
+- g55_park_ruki-skreshcheny_seryoznyy_v-kameru.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g55_park_ruki-skreshcheny_seryoznyy_v-kameru.jpg
+- g56_park_ruki-skreshcheny_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g56_park_ruki-skreshcheny_ulybka.jpg
+- g57_park_ruka-u-lica_v-kameru.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g57_park_ruka-u-lica_v-kameru.jpg
+- g58_park_ruka-u-podborodka_dumaet.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g58_park_ruka-u-podborodka_dumaet.jpg
+- g59_park_ruka-na-lbu_PROBLEMA-ustalost.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g59_park_ruka-na-lbu_PROBLEMA-ustalost.jpg
+- g60_park_igrivaya-ulybka_ruka-u-golovy.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g60_park_igrivaya-ulybka_ruka-u-golovy.jpg
+- g61_ulica_ruki-skreshcheny_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g61_ulica_ruki-skreshcheny_ulybka.jpg
+- g62_cvetochnye-chasy_gorizont_ruki-v-karmanah.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g62_cvetochnye-chasy_gorizont_ruki-v-karmanah.jpg
+- g63_cvetochnye-chasy_gorizont_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g63_cvetochnye-chasy_gorizont_vzglyad-vverh.jpg
+- g64_cvetochnye-chasy_gorizont_vzglyad-vverh_blizhe.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g64_cvetochnye-chasy_gorizont_vzglyad-vverh_blizhe.jpg
+- g65_ulica_pishet-v-telefone_vidna-vyveska-Montblanc.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g65_ulica_pishet-v-telefone_vidna-vyveska-Montblanc.jpg
+- g66_ulica_razgovor-po-telefonu_vzglyad-vverh.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g66_ulica_razgovor-po-telefonu_vzglyad-vverh.jpg
+- g67_ulica_telefon_kulak-pobeda_ulybka.jpg: https://raw.githubusercontent.com/costa0001/chernoviki-karuseli/main/foto-baza/2026-10-zheneva/g67_ulica_telefon_kulak-pobeda_ulybka.jpg
+
+По смыслу: «время» g38, g51, g62-g64 (цветочные часы); «проблема/боль» g59; «размышление» g49, g50, g53, g58; «успех/победа» g67; «работа с телефоном/ИИ» g65, g66; горизонтальные кадры g62-g64.
+g65: видна вывеска Montblanc, без нужды не использовать.
+
 g41: на фоне видна вывеска Rolex, для рекламы бренда не использовать без нужды.
 
 Уже использованы на обложках 28.10: g05 (карусель «5 раз я менял направление бизнеса»), g03 (карусель «5 бесплатных ИИ-помощников»).
