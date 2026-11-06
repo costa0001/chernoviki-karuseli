@@ -167,7 +167,7 @@ def endp(x):
 def jn(d):
     d = endp(d)
     if re.match(r'(и|а|но|или|что|в|на|по|за|от|до|к|с|о|для|сколько|какая|какой|как|кто|где|когда|если|чтобы|«)\b', d) or d.startswith('«'):
-        return ': ' + d if not re.match(r'(и|а|но)\s', d) else ', ' + d
+        return ': ' + d if not re.match(r'(и|а|но)\s', d) else ' ' + d
     return ': ' + d[0].lower() + d[1:]
 
 PAD5 = 'Не откладывайте на потом: выберите один пункт из карусели и сделайте его сегодня. Маленький шаг сегодня полезнее большого плана на когда-нибудь.'
@@ -179,7 +179,13 @@ def caption(c):
     body = []
     for s in c['sl']:
         k = s['t']; h = endp(s['h'])
-        if k == 'rows': body.append(h + ' ' + ' '.join(endp(r) for r in s['rows']) + (' ' + endp(s['acc']) if s.get('acc') else ''))
+        if k == 'rows':
+            rs = [clean(r).rstrip(';.') for r in s['rows']]
+            pre = (' ' + endp(s['p'])) if s.get('p') else ''
+            if any(r[:1].islower() for r in rs):
+                body.append(clean(s['h']).rstrip('.?:') + pre.rstrip('.:') + ': ' + ', '.join(rs) + '.' + (' ' + endp(s['acc']) if s.get('acc') else ''))
+            else:
+                body.append(h + pre + ' ' + ' '.join(endp(r) for r in rs) + (' ' + endp(s['acc']) if s.get('acc') else ''))
         elif k == 'big': body.append(h + ' ' + endp(s.get('p', '')) + ' ' + endp(s['huge']))
         elif k == 'num': body.append(h + '\n' + '\n'.join(f'{j + 1}. {clean(t)}{jn(d)}' for j, (t, d) in enumerate(s['items'])))
         elif k == 'flow': body.append(h + ' ' + ' → '.join(clean(x) for x in s['steps']) + '.')
@@ -187,7 +193,7 @@ def caption(c):
         elif k == 'prompt': body.append(f'{h} Промпт со слайда {c["sl"].index(s) + 2}, скопируйте:\n{clean(s["pr"])}')
     body = [re.sub(r' +', ' ', b).strip() for b in body if clean(b)]
     while True:
-        parts = [START[w], hook] + body + [MID[w], FACT[i % 3], ASK[i % 3]]
+        parts = [START[w], hook] + body + [MID[w], (FACT[0], FACT[2])[i % 2] if w == 'УРОК' else FACT[i % 3], ASK[i % 3]]
         txt = '\n\n'.join(parts)
         if len(txt) < 1800 or len(body) <= 2: break
         body.pop(-2)
