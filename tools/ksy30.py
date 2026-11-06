@@ -162,7 +162,9 @@ def clean(x):
 
 def endp(x):
     x = clean(x)
-    return x if not x or x[-1] in '.?!…»' else x + '.'
+    if not x or x[-1] in '.?!…:': return x
+    if x[-1] == '»' and len(x) > 1 and x[-2] in '.?!…': return x
+    return x + '.'
 
 def jn(d):
     d = endp(d)
@@ -180,10 +182,10 @@ def caption(c):
     for s in c['sl']:
         k = s['t']; h = endp(s['h'])
         if k == 'rows':
-            rs = [clean(r).rstrip(';.') for r in s['rows']]
+            rs = [clean(r).rstrip(';') for r in s['rows']]
             pre = (' ' + endp(s['p'])) if s.get('p') else ''
             if any(r[:1].islower() for r in rs):
-                body.append(clean(s['h']).rstrip('.?:') + pre.rstrip('.:') + ': ' + ', '.join(rs) + '.' + (' ' + endp(s['acc']) if s.get('acc') else ''))
+                body.append(clean(s['h']).rstrip('.?:') + pre.rstrip('.:') + ': ' + ', '.join(r.rstrip('.') for r in rs) + '.' + (' ' + endp(s['acc']) if s.get('acc') else ''))
             else:
                 body.append(h + pre + ' ' + ' '.join(endp(r) for r in rs) + (' ' + endp(s['acc']) if s.get('acc') else ''))
         elif k == 'big': body.append(h + ' ' + endp(s.get('p', '')) + ' ' + endp(s['huge']))
