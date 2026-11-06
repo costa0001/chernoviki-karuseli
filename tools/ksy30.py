@@ -166,6 +166,10 @@ def endp(x):
     if x[-1] == '»' and len(x) > 1 and x[-2] in '.?!…': return x
     return x + '.'
 
+def cap(x):
+    x = clean(x)
+    return x if x.isupper() and len(x) <= 3 else x.capitalize()
+
 def jn(d):
     d = endp(d)
     if re.match(r'(и|а|но|или|что|в|на|по|за|от|до|к|с|о|для|сколько|какая|какой|как|кто|где|когда|если|чтобы|«)\b', d) or d.startswith('«'):
@@ -177,7 +181,8 @@ PAD4 = 'Если карусель была полезной, отправьте 
 
 def caption(c):
     w = c['word']; i = c['i']
-    hook = endp(c['kick']) + ' ' + endp(c['title'] + ' ' + c['acc'])
+    t2 = clean(c['title'] + ' ' + c['acc'])
+    hook = (clean(c['kick']).rstrip('.') + ' ' + endp(t2)) if t2[:1].islower() else endp(c['kick']) + ' ' + endp(t2)
     body = []
     for s in c['sl']:
         k = s['t']; h = endp(s['h'])
@@ -188,14 +193,18 @@ def caption(c):
                 body.append(clean(s['h']).rstrip('.?:') + pre.rstrip('.:') + ': ' + ', '.join(r.rstrip('.') for r in rs) + '.' + (' ' + endp(s['acc']) if s.get('acc') else ''))
             else:
                 body.append(h + pre + ' ' + ' '.join(endp(r) for r in rs) + (' ' + endp(s['acc']) if s.get('acc') else ''))
-        elif k == 'big': body.append(h + ' ' + endp(s.get('p', '')) + ' ' + endp(s['huge']))
+        elif k == 'big':
+            pp = clean(s.get('p', ''))
+            body.append((clean(s['h']).rstrip('.') + ' ' + endp(pp) if pp[:1].islower() else h + ' ' + endp(pp)) + ' ' + endp(s['huge']))
         elif k == 'num': body.append(h + '\n' + '\n'.join(f'{j + 1}. {clean(t)}{jn(d)}' for j, (t, d) in enumerate(s['items'])))
         elif k == 'flow': body.append(h + ' ' + ' → '.join(clean(x) for x in s['steps']) + '.')
-        elif k == 'vs': body.append(h + f' {clean(s["a"][0]).capitalize()}{jn(s["a"][1])} {clean(s["b"][0]).capitalize()}{jn(s["b"][1])}')
+        elif k == 'vs': body.append(h + f' {cap(s["a"][0])}{jn(s["a"][1])} {cap(s["b"][0])}{jn(s["b"][1])}')
         elif k == 'prompt': body.append(f'{h} Промпт со слайда {c["sl"].index(s) + 2}, скопируйте:\n{clean(s["pr"])}')
     body = [re.sub(r' +', ' ', b).strip() for b in body if clean(b)]
+    fact = (FACT[0], FACT[2])[c['n'] % 2] if w == 'УРОК' else FACT[c['n'] % 3]
+    if fact == FACT[0] and any('300 000' in b for b in body): fact = FACT[2]
     while True:
-        parts = [START[w], hook] + body + [MID[w], (FACT[0], FACT[2])[i % 2] if w == 'УРОК' else FACT[i % 3], ASK[i % 3]]
+        parts = [START[w], hook] + body + [MID[w], fact, ASK[i % 3]]
         txt = '\n\n'.join(parts)
         if len(txt) < 1800 or len(body) <= 2: break
         body.pop(-2)
