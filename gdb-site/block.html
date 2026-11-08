@@ -1,0 +1,270 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+.gdb{--bg:#040a18;--bg2:#071226;--card:rgba(255,255,255,.04);--line:rgba(120,180,255,.16);--ink:#eef4ff;--muted:#9fb0cc;--blue:#1e90ff;--cyan:#22d3ee;--gold:#f6a623;
+  font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;overflow:hidden;position:relative}
+.gdb *{box-sizing:border-box;margin:0;padding:0}
+.gdb a{color:inherit;text-decoration:none}
+.gdb .w{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+.gdb h1,.gdb h2,.gdb h3,.gdb .mont{font-family:Montserrat,sans-serif}
+.gdb .grad{background:linear-gradient(90deg,#7cc4ff,#22d3ee 45%,#1e90ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gdb .gold{color:var(--gold)}
+.gdb .btn{display:inline-flex;align-items:center;gap:10px;font-family:Montserrat;font-weight:800;font-size:15px;letter-spacing:.3px;padding:16px 26px;border-radius:14px;transition:.25s;cursor:pointer;border:0}
+.gdb .btn.pri{background:linear-gradient(135deg,#1e90ff,#22d3ee);color:#03101f;box-shadow:0 10px 40px rgba(34,211,238,.35)}
+.gdb .btn.pri:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(34,211,238,.5)}
+.gdb .btn.ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
+.gdb .btn.ghost:hover{border-color:var(--cyan)}
+/* nav */
+.gdb nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(4,10,24,.72);border-bottom:1px solid var(--line)}
+.gdb nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+.gdb .brand{display:flex;align-items:center;gap:12px;font-family:Montserrat;font-weight:800;font-size:15px;letter-spacing:1.5px}
+.gdb .brand img{width:44px;height:44px;filter:drop-shadow(0 0 12px rgba(34,211,238,.5))}
+.gdb .links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+.gdb .links a:hover{color:var(--ink)}
+.gdb nav .btn{padding:11px 18px;font-size:13px}
+/* hero */
+.gdb .hero{position:relative;padding:90px 0 110px;min-height:760px}
+.gdb #gdbnet{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.75}
+.gdb .glow{position:absolute;border-radius:50%;filter:blur(90px);z-index:0}
+.gdb .g1{width:620px;height:620px;background:rgba(30,144,255,.28);right:-120px;top:40px}
+.gdb .g2{width:420px;height:420px;background:rgba(246,166,35,.14);left:-120px;bottom:-60px}
+.gdb .hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.gdb .pill{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);background:rgba(30,144,255,.08);padding:8px 14px;border-radius:40px;font-size:13px;color:#bfe9ff;margin-bottom:26px}
+.gdb .pill i{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.gdb .hero h1{font-size:clamp(40px,6vw,74px);line-height:1.02;font-weight:900;letter-spacing:-1.5px}
+.gdb .hero p.sub{font-size:19px;color:var(--muted);margin:24px 0 36px;max-width:560px}
+.gdb .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.gdb .stats{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap}
+.gdb .stats b{display:block;font-family:Montserrat;font-size:30px;font-weight:900}
+.gdb .stats span{font-size:13px;color:var(--muted)}
+.gdb .orb{position:relative;display:grid;place-items:center}
+.gdb .orb img{width:100%;max-width:440px;border-radius:50%;filter:drop-shadow(0 0 60px rgba(30,144,255,.55));animation:gdbfloat 7s ease-in-out infinite}
+.gdb .orb::before{content:"";position:absolute;width:112%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(246,166,35,.35);border-left-color:transparent;border-bottom-color:transparent;animation:gdbspin 18s linear infinite}
+@keyframes gdbfloat{50%{transform:translateY(-14px)}}
+@keyframes gdbspin{to{transform:rotate(360deg)}}
+/* sections */
+.gdb section.s{padding:100px 0;position:relative}
+.gdb .eyebrow{font-family:Montserrat;font-weight:800;font-size:12px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.gdb h2{font-size:clamp(30px,4vw,48px);font-weight:900;letter-spacing:-1px;line-height:1.1;max-width:760px}
+.gdb .lead{color:var(--muted);font-size:18px;margin-top:16px;max-width:640px}
+.gdb .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.gdb .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:22px;padding:30px;transition:.3s;position:relative;overflow:hidden}
+.gdb .card:hover{border-color:rgba(34,211,238,.5);transform:translateY(-4px)}
+.gdb .card .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(30,144,255,.12);border:1px solid rgba(34,211,238,.35);margin-bottom:20px;color:var(--cyan)}
+.gdb .card h3{font-size:20px;font-weight:800;margin-bottom:10px}
+.gdb .card p{color:var(--muted);font-size:15px}
+.gdb .quote{font-family:Montserrat;font-weight:700;font-size:18px;color:#cfe6ff}
+/* problem */
+.gdb .prob .card{padding:26px}
+.gdb .prob .num{font-family:Montserrat;font-weight:900;font-size:44px;color:transparent;-webkit-text-stroke:1px rgba(124,196,255,.6);margin-bottom:8px}
+/* process */
+.gdb .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px;counter-reset:st}
+.gdb .step{border-top:2px solid var(--line);padding-top:24px;position:relative}
+.gdb .step::before{counter-increment:st;content:"0" counter(st);font-family:Montserrat;font-weight:900;font-size:15px;color:var(--gold);display:block;margin-bottom:14px}
+.gdb .step::after{content:"";position:absolute;top:-2px;left:0;width:60px;height:2px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.gdb .step h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.gdb .step p{color:var(--muted);font-size:15px}
+/* plans */
+.gdb .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px;align-items:stretch}
+.gdb .plan{border:1px solid var(--line);border-radius:24px;padding:32px;background:rgba(255,255,255,.02);display:flex;flex-direction:column}
+.gdb .plan.hot{background:linear-gradient(180deg,rgba(30,144,255,.16),rgba(34,211,238,.04));border-color:rgba(34,211,238,.55);box-shadow:0 20px 60px rgba(30,144,255,.18)}
+.gdb .plan .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:var(--gold);color:#1a1000;padding:5px 10px;border-radius:20px;margin-bottom:16px}
+.gdb .plan h3{font-size:24px;font-weight:900}
+.gdb .plan .for{color:var(--muted);font-size:14px;margin:6px 0 22px}
+.gdb .plan ul{list-style:none;flex:1}
+.gdb .plan li{padding:9px 0 9px 28px;position:relative;font-size:15px;border-bottom:1px dashed rgba(255,255,255,.07)}
+.gdb .plan li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:7px;border-left:2px solid var(--cyan);border-bottom:2px solid var(--cyan);transform:rotate(-45deg)}
+.gdb .plan .btn{margin-top:26px;justify-content:center}
+.gdb .note{color:var(--muted);font-size:14px;margin-top:22px;text-align:center}
+/* proof */
+.gdb .proof{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;border:1px solid var(--line);border-radius:28px;padding:50px;background:radial-gradient(600px 300px at 0% 0%,rgba(30,144,255,.18),transparent),rgba(255,255,255,.02)}
+.gdb .proof .big{font-family:Montserrat;font-weight:900;font-size:clamp(54px,7vw,92px);line-height:1}
+.gdb .proof .row{display:flex;gap:30px;margin-top:20px;flex-wrap:wrap}
+.gdb .proof .row b{font-family:Montserrat;font-size:26px;display:block}
+.gdb .proof .row span{color:var(--muted);font-size:13px}
+/* faq */
+.gdb .faq{margin-top:40px;max-width:860px}
+.gdb details{border-bottom:1px solid var(--line);padding:22px 0}
+.gdb summary{list-style:none;cursor:pointer;font-family:Montserrat;font-weight:800;font-size:18px;display:flex;justify-content:space-between;gap:20px}
+.gdb summary::-webkit-details-marker{display:none}
+.gdb summary::after{content:"+";color:var(--cyan);font-size:26px;line-height:1;transition:.2s}
+.gdb details[open] summary::after{transform:rotate(45deg)}
+.gdb details p{color:var(--muted);margin-top:12px;font-size:16px;max-width:760px}
+/* contact */
+.gdb .contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.gdb form{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:24px;padding:30px;display:grid;gap:14px}
+.gdb input,.gdb textarea,.gdb select{width:100%;background:rgba(4,10,24,.7);border:1px solid var(--line);border-radius:12px;padding:15px 16px;color:var(--ink);font:inherit;font-size:15px}
+.gdb input:focus,.gdb textarea:focus,.gdb select:focus{outline:none;border-color:var(--cyan)}
+.gdb textarea{min-height:110px;resize:vertical}
+.gdb .small{font-size:12px;color:var(--muted)}
+.gdb .ok{display:none;color:#7dffb3;font-weight:600}
+.gdb .chan{display:grid;gap:12px;margin-top:30px}
+.gdb .chan a{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:rgba(255,255,255,.02)}
+.gdb .chan a:hover{border-color:var(--cyan)}
+.gdb footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}
+.gdb footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.gdb .rv{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+.gdb .rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ .gdb .links{display:none}
+ .gdb .hero{padding:50px 0 70px;min-height:0}
+ .gdb .hero .w,.gdb .proof,.gdb .contact{grid-template-columns:1fr}
+ .gdb .orb{order:-1}.gdb .orb img{max-width:240px}
+ .gdb .grid3,.gdb .plans{grid-template-columns:1fr}
+ .gdb .steps{grid-template-columns:1fr 1fr}
+ .gdb section.s{padding:70px 0}
+ .gdb .proof{padding:30px}
+}
+@media(max-width:520px){.gdb .steps{grid-template-columns:1fr}.gdb nav .btn{display:none}}
+</style>
+
+<div class="gdb" id="gdb">
+<nav><div class="w">
+  <a class="brand" href="#gdb-top"><img src="LOGO_URL" alt="Global Digital Business logo">GLOBAL DIGITAL BUSINESS</a>
+  <div class="links"><a href="#gdb-services">Services</a><a href="#gdb-process">How it works</a><a href="#gdb-plans">Plans</a><a href="#gdb-faq">FAQ</a></div>
+  <a class="btn pri" href="#gdb-contact">Free audit</a>
+</div></nav>
+
+<header class="hero" id="gdb-top">
+  <canvas id="gdbnet"></canvas><div class="glow g1"></div><div class="glow g2"></div>
+  <div class="w">
+    <div>
+      <div class="pill"><i></i>Social media management agency</div>
+      <h1>More clients.<br><span class="grad">More revenue.</span><br>From your Instagram.</h1>
+      <p class="sub">We run your Instagram from strategy to the last comment, so it brings you customers every week. You stay focused on your business.</p>
+      <div class="ctas"><a class="btn pri" href="#gdb-contact">Get a free account audit &rarr;</a><a class="btn ghost" href="#gdb-process">How it works</a></div>
+      <div class="stats">
+        <div><b class="grad">340K+</b><span>followers grown organically<br>on our founder&rsquo;s account</span></div>
+        <div><b class="grad">100M+</b><span>views reached<br>in 2025</span></div>
+        <div><b class="gold">0 CHF</b><span>spent on ads<br>to get there</span></div>
+      </div>
+    </div>
+    <div class="orb"><img src="LOGO_URL" alt=""></div>
+  </div>
+</header>
+
+<section class="s prob"><div class="w">
+  <div class="eyebrow rv">The problem</div>
+  <h2 class="rv">Your business is great. <span class="grad">Your Instagram doesn&rsquo;t show it.</span></h2>
+  <p class="lead rv">Before people call, book or visit, they open your profile. Here is what an inactive page tells them:</p>
+  <div class="grid3">
+    <div class="card rv"><div class="num">01</div><p class="quote">&ldquo;Last post a year ago. Are they still open?&rdquo;</p></div>
+    <div class="card rv"><div class="num">02</div><p class="quote">&ldquo;No prices, no examples, no way to book.&rdquo;</p></div>
+    <div class="card rv"><div class="num">03</div><p class="quote">&ldquo;Let&rsquo;s check the competitor instead.&rdquo;</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="gdb-services"><div class="w">
+  <div class="eyebrow rv">What we do</div>
+  <h2 class="rv">Everything your account needs to <span class="grad">sell</span>, done for you.</h2>
+  <div class="grid3">
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Strategy &amp; content plan</h3><p>We study your clients and competitors, then plan every month around what you actually sell.</p></div>
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="3"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div><h3>Photo &amp; Reels production</h3><p>Real photos and short videos of your place, team and work. Edited in one recognisable style.</p></div>
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/></svg></div><h3>Publishing &amp; replies</h3><p>Posts and stories go out on schedule. We answer comments and route enquiries straight to you.</p></div>
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>Profile makeover</h3><p>Name, bio, highlights, pinned posts and visual style that turn a visitor into an enquiry.</p></div>
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><h3>Growth with Reels</h3><p>Formats that reach people who don&rsquo;t follow you yet: the cheapest way to get new local customers.</p></div>
+    <div class="card rv"><div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Monthly report</h3><p>Reach, followers, messages and enquiries, in plain words. You always know what you pay for.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="gdb-process"><div class="w">
+  <div class="eyebrow rv">How it works</div>
+  <h2 class="rv">From first call to a <span class="grad">steady flow of clients</span>.</h2>
+  <div class="steps">
+    <div class="step rv"><h3>Free audit</h3><p>We review your profile and show you 3 changes that bring more clients.</p></div>
+    <div class="step rv"><h3>Plan &amp; makeover</h3><p>We agree on goals, redesign the profile and prepare the first month of content.</p></div>
+    <div class="step rv"><h3>Content every week</h3><p>We shoot, edit and publish. You approve before anything goes live.</p></div>
+    <div class="step rv"><h3>Report &amp; improve</h3><p>Every month we show the numbers and double down on what works.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="gdb-plans"><div class="w">
+  <div class="eyebrow rv">Plans</div>
+  <h2 class="rv">Pick the pace. <span class="grad">We do the work.</span></h2>
+  <div class="plans">
+    <div class="plan rv"><h3>Start</h3><p class="for">For a business that needs a living, trustworthy page.</p>
+      <ul><li>Profile makeover</li><li>8 posts &amp; Reels per month</li><li>Stories every week</li><li>Monthly content plan</li><li>Monthly report</li></ul>
+      <a class="btn ghost" href="#gdb-contact">Ask for a quote</a></div>
+    <div class="plan hot rv"><span class="tag">Most popular</span><h3>Growth</h3><p class="for">For a business that wants new clients from Instagram.</p>
+      <ul><li>Everything in Start</li><li>12&ndash;16 posts &amp; Reels per month</li><li>Monthly photo &amp; video shoot</li><li>Comment &amp; DM management</li><li>Growth strategy with Reels</li></ul>
+      <a class="btn pri" href="#gdb-contact">Ask for a quote</a></div>
+    <div class="plan rv"><h3>Premium</h3><p class="for">For brands that want to lead their market.</p>
+      <ul><li>Everything in Growth</li><li>Daily stories</li><li>Influencer &amp; collab outreach</li><li>Ad campaign setup</li><li>Dedicated account manager</li></ul>
+      <a class="btn ghost" href="#gdb-contact">Ask for a quote</a></div>
+  </div>
+  <p class="note rv">Fixed monthly price, agreed after the free audit. No hidden costs.</p>
+</div></section>
+
+<section class="s"><div class="w">
+  <div class="proof rv">
+    <div><div class="eyebrow">Why trust us</div><h2>We grow our own accounts <span class="grad">the same way</span>.</h2><p class="lead">Our founder Konstantin Bravo built an audience of 340,000+ followers in about a year without paid ads or collaborations, using the same system we run for clients.</p></div>
+    <div><div class="big grad">340K+</div><div class="row"><div><b>100M+</b><span>views in 2025</span></div><div><b class="gold">0 CHF</b><span>ad spend</span></div><div><b>1 system</b><span>for every client</span></div></div></div>
+  </div>
+</div></section>
+
+<section class="s" id="gdb-faq"><div class="w">
+  <div class="eyebrow rv">FAQ</div>
+  <h2 class="rv">Questions clients ask first</h2>
+  <div class="faq">
+    <details class="rv"><summary>How much does it cost?</summary><p>Each plan has a fixed monthly price that depends on how much content you need. You get an exact quote after the free audit, before you commit to anything.</p></details>
+    <details class="rv"><summary>When will I see results?</summary><p>The profile makeover changes the first impression immediately. Reach and engagement usually grow within the first 4&ndash;6 weeks of regular posting. A steady flow of enquiries builds over 2&ndash;3 months.</p></details>
+    <details class="rv"><summary>Do I have to film myself or be on camera?</summary><p>No. We can build content around your products, your place and your team. If you are happy to appear, short videos with you usually perform even better, and we guide you through it.</p></details>
+    <details class="rv"><summary>How much of my time does it take?</summary><p>About one hour a month: a short call to plan, a shoot at your place, and approving content in a shared calendar.</p></details>
+    <details class="rv"><summary>Which businesses do you work with?</summary><p>Restaurants and caf&eacute;s, beauty and hair salons, clinics, fitness studios, shops, consultants and other service businesses that want more clients from social media.</p></details>
+    <details class="rv"><summary>In which languages do you post?</summary><p>English, French and Russian. We match the language of your clients.</p></details>
+    <details class="rv"><summary>Who owns the account?</summary><p>You do, always. We work as collaborators on your account and never change ownership.</p></details>
+    <details class="rv"><summary>Is there a long-term contract?</summary><p>We work month to month. We would rather keep you with results than with a contract.</p></details>
+  </div>
+</div></section>
+
+<section class="s" id="gdb-contact"><div class="w contact">
+  <div>
+    <div class="eyebrow rv">Free audit</div>
+    <h2 class="rv">Let&rsquo;s see what your Instagram <span class="grad">could bring you</span>.</h2>
+    <p class="lead rv">Send your account name. Within 48 hours we reply with 3 concrete changes to get more clients. No obligation.</p>
+    <div class="chan rv">
+      <a href="https://www.instagram.com/global.digital.business/" target="_blank" rel="noopener"><svg width="22" height="22" fill="none" stroke="#22d3ee" stroke-width="2"><rect x="2" y="2" width="18" height="18" rx="5"/><circle cx="11" cy="11" r="4"/><circle cx="16.5" cy="5.5" r="1" fill="#22d3ee"/></svg><span>DM &ldquo;AUDIT&rdquo; on Instagram <b>@global.digital.business</b></span></a>
+    </div>
+  </div>
+  <form id="gdbform" class="rv">
+    <input name="name" placeholder="Your name" required>
+    <input name="business" placeholder="Business name" required>
+    <input name="instagram" placeholder="Instagram account, e.g. @yourbusiness">
+    <input name="contact" placeholder="Phone or email" required>
+    <select name="goal"><option>Main goal: more clients</option><option>Main goal: more sales online</option><option>Main goal: brand awareness</option><option>Not sure yet</option></select>
+    <textarea name="message" placeholder="Anything we should know? (optional)"></textarea>
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <button class="btn pri" type="submit" style="justify-content:center">Get my free audit &rarr;</button>
+    <p class="ok" id="gdbok">Thank you! We&rsquo;ll get back to you within 48 hours.</p>
+    <p class="small">We use your details only to reply to your request.</p>
+  </form>
+</div></section>
+
+<footer><div class="w"><span>&copy; 2026 Global Digital Business &middot; SMM agency</span><span>More clients &middot; More revenue</span></div></footer>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('gdb');
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  root.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  // network canvas
+  var c=document.getElementById('gdbnet'),x=c.getContext('2d'),pts=[],W,H,dpr=Math.min(window.devicePixelRatio||1,2);
+  function size(){W=c.offsetWidth;H=c.offsetHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.min(90,Math.floor(W*H/14000));pts=[];for(var i=0;i<n;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,g:Math.random()<.12});}
+  function draw(){x.clearRect(0,0,W,H);
+    for(var i=0;i<pts.length;i++){var p=pts[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+      for(var j=i+1;j<pts.length;j++){var q=pts[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;if(d<17000){x.strokeStyle='rgba(80,170,255,'+(1-d/17000)*.35+')';x.lineWidth=1;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke();}}
+      x.fillStyle=p.g?'rgba(246,166,35,.95)':'rgba(140,210,255,.9)';x.shadowColor=p.g?'#f6a623':'#22d3ee';x.shadowBlur=10;x.beginPath();x.arc(p.x,p.y,p.g?2.2:1.6,0,7);x.fill();x.shadowBlur=0;}
+    requestAnimationFrame(draw);}
+  size();draw();window.addEventListener('resize',size);
+  // form
+  var f=document.getElementById('gdbform');
+  f.addEventListener('submit',function(e){e.preventDefault();if(f._honey.value)return;var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
+    var data={};new FormData(f).forEach(function(v,k){if(k!=='_honey')data[k]=v});data._subject='New audit request - Global Digital Business';data._template='table';
+    fetch('https://formsubmit.co/ajax/costadisk0001@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+    .then(function(){f.querySelectorAll('input,select,textarea,button').forEach(function(el){el.style.display='none'});document.getElementById('gdbok').style.display='block';})
+    .catch(function(){b.disabled=false;b.textContent='Try again';});});
+})();
+</script>
