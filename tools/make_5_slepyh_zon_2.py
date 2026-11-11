@@ -34,9 +34,9 @@ def stat(e, v, t, c='#fff'):
 
 
 sl = {}
-sl[1] = cover(SH + 'cover_sz2.jpg', 'center 25%',
-              f'<div class="tag" style="font-size:32px;margin-bottom:6px">Вторая серия · ещё 5 слепых зон</div>Почему у вас не получается<br><span class="y" style="white-space:nowrap">расти в доходе?</span>',
-              'Листайте и отметьте, что из этого про вас', N)
+sl[1] = cover(SH + 'cover_sz2b.jpg', 'center 18%',
+              f'<div class="tag" style="font-size:32px;margin-bottom:6px">Вторая серия · слепые зоны 6–10</div>Курс готов,<br>блог ведёте,<br><span class="y" style="white-space:nowrap">а денег нет?</span>',
+              '5 ошибок, которых вы не видите', N)
 
 # --- Зона 6: продукт без покупателей
 rows = ''.join(f'<div style="display:flex;align-items:center;gap:24px;border-bottom:2px solid #D9CFBB;padding:20px 0"><div style="width:54px;height:54px;border-radius:12px;background:{c};color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:38px">{m}</div><div style="font-weight:700;font-size:40px;color:{NV}">{t}</div></div>'
