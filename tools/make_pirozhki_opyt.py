@@ -50,7 +50,10 @@ ill = f'''<div style="position:absolute;top:130px;left:170px;right:170px;backgro
 <svg width="260" height="260" style="position:absolute;top:420px;left:700px"><circle cx="110" cy="110" r="80" fill="none" stroke="{Y}" stroke-width="16"/><line x1="168" y1="168" x2="240" y2="240" stroke="{Y}" stroke-width="22" stroke-linecap="round"/></svg>'''
 sl[5] = txt(5, 'Секрет: знать свою аудиторию', 'До мелочей. Что болит, чего боятся и <span class="y">какими словами</span> они об этом говорят.', ill, top=740)
 
-ill = polaroid(FB + 'g59_park_ruka-na-lbu_PROBLEMA-ustalost.jpg', 'center 22%', 290, 100, 500, 500, -3, '«почему никто не покупает?»')
+ill = f'''<div style="position:absolute;top:150px;left:120px;right:120px">
+{card("«Наверное, им нужен курс подлиннее»", "transform:rotate(-2deg);margin-right:120px")}
+{card("«Я думаю, они хотят подешевле»", "transform:rotate(2deg);margin-top:26px;margin-left:160px")}
+{card("«Мне кажется, это всем нужно»", "transform:rotate(-1deg);margin-top:26px;margin-right:60px")}</div>'''
 sl[6] = txt(6, 'На догадках такой продукт не сделать', 'Если вы не знаете реальные боли людей и <span class="y">как они формулируют их у себя в голове.</span>', ill, top=760)
 
 ill = two('В ОПРОСЕ', '87%', '«да, купил бы»', 'ОПЛАТИЛИ', '2 человека', 'когда дошло до денег', top=150, lc=SKY, rc=R)
@@ -78,8 +81,7 @@ ill = f'''<svg width="1080" height="600" style="position:absolute;top:110px;left
 <text x="540" y="330" text-anchor="middle" font-family="S" font-weight="800" font-size="40" fill="{Y}">продукт</text></svg>'''
 sl[11] = txt(11, 'Ваше главное преимущество', 'Вы сами из этой аудитории. Переезжали, начинали заново, искали доход. <span class="y">Вы знаете их боль изнутри.</span>', ill, top=720)
 
-ill = polaroid(FB + 'g62_cvetochnye-chasy_gorizont_ruki-v-karmanah.jpg', 'center 40%', 180, 90, 720, 470, 2)
-sl[12] = txt(12, 'Я начинал так же', 'С нуля, в 52 года, в новой стране. Сегодня у меня <span class="y">более 300 000 подписчиков</span> за год без рекламы и коллабораций.', ill, top=700, tag='моя история')
+sl[12] = personal2(12, 'Я начинал так же', 'С нуля, в 52 года, в новой стране.')
 
 sl[13] = S(13, N, f'''<div class="txt" style="top:0;bottom:70px;display:flex;flex-direction:column;justify-content:center;text-align:center">
 <div class="tag">бесплатно · 2 минуты</div>
