@@ -31,7 +31,7 @@ def bubble(t, me=False, extra=''):
 
 sl = {}
 sl[1] = cover(SH + 'cover_sz.jpg', 'center 22%',
-              f'<div class="tag" style="font-size:32px;margin-bottom:6px">Первая серия · 5 слепых зон</div>Почему у вас не получается <span class="y">расти в доходе?</span>',
+              f'<div class="tag" style="font-size:32px;margin-bottom:6px">Первая серия · 5 слепых зон</div>Почему у вас не получается<br><span class="y" style="white-space:nowrap">расти в доходе?</span>',
               'Листайте и отметьте, что из этого про вас', N)
 
 # --- Зона 1: коллекционирование знаний
