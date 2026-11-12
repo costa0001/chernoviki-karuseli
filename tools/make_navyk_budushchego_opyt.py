@@ -3,7 +3,7 @@ sys.path.insert(0, '/home/claude/work')
 from szlib import *
 
 n = 11; sl = {}
-sl[1] = cover_full(SH + 'c_vang.jpg', 'center 85%', 'Совет миллиардера из мира ИИ',
+sl[1] = cover_full(SH + 'c_vang.jpg', 'center 85%', 'Совет Александра Ванга, миллиардера из ИИ',
                    'Он назвал<br>навык будущего.<br><span class="y" style="white-space:nowrap">Он нужен и вам</span>',
                    'Даже если вам 45 и вы не программист').replace('1 / 13', '1 / 11')
 
