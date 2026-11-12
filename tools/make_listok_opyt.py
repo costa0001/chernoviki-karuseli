@@ -16,7 +16,7 @@ def note(lines, top=120, left=230, right=230, rot=-2, title='на завтра',
 six = ['Главное дело', 'Второе по важности', 'Третье', 'Четвёртое', 'Пятое', 'Шестое']
 
 sl[1] = cover_polaroid(SH + 'c_list.jpg', 'center 18%', n,
-    'Метод за 25&nbsp;000&nbsp;$,<br>который помещается<br><span class="y" style="white-space:nowrap">на одном листке</span>', 'И как он поможет вашему доходу', sticker='1918 год', rot=4).replace('font-size:74px', 'font-size:66px')
+    'Метод за 500&nbsp;000&nbsp;$,<br>который помещается<br><span class="y" style="white-space:nowrap">на одном листке</span>', 'И как он поможет вашему доходу', sticker='1918 год', rot=4).replace('font-size:74px', 'font-size:66px')
 
 ill = f'''<div style="position:absolute;top:130px;left:0;right:0;text-align:center">
 <div style="display:inline-block;background:{PAPER};color:{NV};border-radius:12px;padding:26px 60px;transform:rotate(-2deg);box-shadow:0 30px 70px rgba(0,0,0,.45)">
@@ -34,7 +34,7 @@ ill = f'''<div style="position:absolute;top:150px;left:120px;right:120px;backgro
 <div style="font-weight:600;font-size:32px;margin-top:26px">Заплатить Айви Ли</div>
 <div style="font-weight:800;font-size:110px;line-height:1.1;margin-top:10px">$ 25 000</div>
 <div style="font-weight:600;font-size:28px;margin-top:16px;color:#5D7359">подпись: Ч. Шваб</div></div>'''
-sl[4] = txt(4, 'Через 3 месяца пришёл чек', 'На 25 000 $. По сегодняшним деньгам <span class="y">это сотни тысяч долларов.</span> Вот за что.', ill, top=720, n=n)
+sl[4] = txt(4, 'Через 3 месяца пришёл чек', 'На 25 000 $. По сегодняшним деньгам <span class="y">это около 500 000 $.</span> Вот за что.', ill, top=720, n=n)
 
 sl[5] = txt(5, 'Шаг 1. Вечером 6 дел', 'Запишите шесть главных дел на завтра. <span class="y">И ни одного больше.</span>', note(six), top=740, n=n)
 sl[6] = txt(6, 'Шаг 2. По важности', 'Расставьте их от самого главного <span class="y">до того, что может подождать.</span>', note(six, highlight=1, rot=1.5), top=740, n=n)
