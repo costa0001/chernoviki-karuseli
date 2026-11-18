@@ -79,7 +79,7 @@ ill = f'''<svg width="1080" height="600" style="position:absolute;top:110px;left
 <text x="790" y="300" text-anchor="middle" font-family="S" font-weight="800" font-size="42" fill="#fff">их боль</text>
 <text x="540" y="282" text-anchor="middle" font-family="S" font-weight="800" font-size="40" fill="{Y}">ваш</text>
 <text x="540" y="330" text-anchor="middle" font-family="S" font-weight="800" font-size="40" fill="{Y}">продукт</text></svg>'''
-sl[11] = txt(11, 'Ваше главное преимущество', 'Вы сами из этой аудитории. Переезжали, начинали заново, искали доход. <span class="y">Вы знаете их боль изнутри.</span>', ill, top=720)
+sl[11] = txt(11, 'Ваше главное преимущество', 'Вы сами из этой аудитории. Начинали заново, искали доход, ошибались. <span class="y">Вы знаете их боль изнутри.</span>', ill, top=720)
 
 sl[12] = personal2(12, 'Я начинал так же', 'С нуля, в 52 года, в новой стране.')
 
